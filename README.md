@@ -13,6 +13,7 @@ A chatbot that reads a customer message and decides what to do with it:
 Customer message → Classifier (decides: bug_report / faq / other) → Condition Node (routes to the right path)
 
 Routes:
+
 -faq → answers using online_shop_faq.md
 - other → redirects to support phone line
 - bug → see note below
