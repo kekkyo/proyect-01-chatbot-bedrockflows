@@ -10,16 +10,12 @@ A chatbot that reads a customer message and decides what to do with it:
 
 ## How it works
 
-Customer message
-│
-▼
-Classifier (decides: bug_report / faq / other)
-│
-▼
-Condition Node (routes to the right path)
-├── faq → answers using online_shop_faq.md
-├── other → redirects to support phone line
-└── bug → see note below
+Customer message → Classifier (decides: bug_report / faq / other) → Condition Node (routes to the right path)
+
+Routes:
+-faq → answers using online_shop_faq.md
+- other → redirects to support phone line
+- bug → see note below
 
 A Guardrail is connected to block harmful content and prompt injection attempts.
 
