@@ -44,3 +44,10 @@ What I did instead:
 
 - Metric: Correctness
 - Score: 1.00
+
+## Observation
+
+A correctness score of 1.00 means the flow's responses matched the expected outcome for all 5 test cases, including the FAQ answers, the direct other request, and the classifier's behavior under a prompt injection attempt. 
+This confirms the classifier is reliably choosing the right path, and that the FAQ path stays grounded in the reference document instead of guessing.
+
+One thing I'd improve with more time: the test set is small (5 cases). I would add more FAQ questions, including partially-matching ones, to check the model doesn't overstate confidence when the answer is only loosely related to the FAQ content.
