@@ -14,7 +14,7 @@ Customer message → Classifier (decides: bug_report / faq / other) → Conditio
 
 Routes:
 
--faq → answers using online_shop_faq.md
+- faq → answers using online_shop_faq.md
 - other → redirects to support phone line
 - bug → see note below
 
